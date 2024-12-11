@@ -1,4 +1,5 @@
 # Draw/Synth p5js/tonejs Project
+# IMPORTANT: Chrome (and other chromium browsers) handle this really poorly so i would recommend using firefox or safari. unless you want some crazy distortion.. then use chrome
 ## Draw:
 Draw mode is selected by default, or by using the pink button in the top left corner. In draw mode, you can choose colors and stroke weight from the palette and create a drawing on the canvas. Additionally, the pink eraser button in the top right allows you to use the mouse to erase small details, or use the red "reset" button to completely clear the canvas.
 ## Synth:
