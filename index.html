@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>p5js/tonejs draw/synth!</title>
+        <link rel="icon" type="image/x-icon" href="drawSynthIcon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <!--tone js-->
+        <script src="https://unpkg.com/tone"></script>
+        <!--p5js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.11.1/p5.js"></script>
+    </head>
+    <body>
+        <div id="palette">
+            <div id="drawSynth">
+                <button id="drawButton" onclick="drawTrue()">draw</button>
+                <button id="synthButton" onclick="synthTrue()">synth</button>
+            </div>
+            <button id="redButton" onclick="paint.colorRed()"></button>
+            <button id="orangeButton" onclick="paint.colorOrange()"></button>
+            <button id="yellowButton" onclick="paint.colorYellow()"></button>
+            <button id="greenButton" onclick="paint.colorGreen()"></button>
+            <button id="blueButton" onclick="paint.colorBlue()"></button>
+            <button id="purpleButton" onclick="paint.colorPurple()"></button>
+            <div id="weightButton"><span id="weightText">weight</span><input type="range" id="weight" name="weight" min="5" max="100"/></div>
+            <div id="speedButton"><span id="speedText">speed</span><input type="range" id="speed" name="speed" min="25" max="800"/></div>
+            <div id="polyButtons">
+                <button id="poly1" onclick="changePoly(this)">mono</button>
+                <button id="poly2" onclick="changePoly(this)">dyad</button>
+                <button id="poly3" onclick="changePoly(this)">triad</button>
+            </div>
+            <div id="noteLength">
+                <button id="pluck" onclick="changeLength(this)">pluck</button>
+                <button id="mid" onclick="changeLength(this)">mid</button>
+                <button id="hold" onclick="changeLength(this)">hold</button>
+            </div>
+             <div id="eraseReset">
+                <button id="eraseButton" onclick="paint.erase()">eraser</button>
+                <button id="killSwitch" onclick="killSwitch()">kill</button>
+                <button id="resetButton" onclick="resetCanvas()">reset</button>
+             </div>
+        </div>
+        <script src="synthMode.js"></script>
+        <script src="drawMode.js"></script>
+        <script src="sketch.js"></script>
+    </body>
+</html>
